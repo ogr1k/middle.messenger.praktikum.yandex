@@ -1,0 +1,13 @@
+<form id="form" class="formLogin">
+    <div class="title">
+        Вход
+    </div>
+    {{#each fieldsNames as |fieldsNames|}}
+        {{> (fieldsNames) ..}}
+    {{/each}}
+    <div class="buttonsContainer">
+        {{#each buttonsNames as |buttonsName|}}
+            {{> (buttonsName) ..}}
+        {{/each}}
+    </div>
+</form>

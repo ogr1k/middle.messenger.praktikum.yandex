@@ -1,0 +1,33 @@
+$mainGrey: #7f7f7f;
+$lightGrey: #8f8f8f;
+$mainBlue: #3369F3;
+$lightBlue: #739ce0;
+
+@mixin set-font-size-height($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin regular-text($size, $line-height, $color) {
+  font-family: 'Inter', serif;
+  font-weight: 400;
+  font-size: $size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin medium-text($size, $line-height, $color) {
+  font-family: 'Inter', serif;
+  font-weight: 500;
+  font-size: $size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin bold-text($size, $line-height, $color) {
+  font-family: 'Inter', serif;
+  font-weight: 700;
+  font-size: $size;
+  line-height: $line-height;
+  color: $color;
+}

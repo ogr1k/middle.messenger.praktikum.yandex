@@ -1,0 +1,26 @@
+@import './src/utils/variables.scss';
+
+#root {
+  @include medium-text(13px, 13px, black)
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./static/fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./static/fonts/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./static/fonts/Inter-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
