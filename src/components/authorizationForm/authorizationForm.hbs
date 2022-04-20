@@ -1,0 +1,19 @@
+<div class="formContainer">
+    <form id={{formName}} class="form">
+        <div>
+            <div class="title">
+                {{title}}
+            </div>
+            <div class="fieldsContainer">
+                {{#each fieldsNames as |fieldsNames|}}
+                    {{> (fieldsNames) ..}}
+                {{/each}}
+            </div>
+        </div>
+        <div class="buttonsContainer">
+            {{#each buttonsNames as |buttonsName|}}
+                {{> (buttonsName) ..}}
+            {{/each}}
+        </div>
+    </form>
+</div>

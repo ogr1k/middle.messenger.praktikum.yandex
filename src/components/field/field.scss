@@ -1,3 +1,31 @@
+@import "../../utils/variables.scss";
+
+.field {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.labelText {
+  display: block;
+  margin-bottom: 4px;
+
+  text-align: left;
+
+  color: $mainGrey;
+
+  @include set-font-size-height(9px, 9px);
+}
+
 .input {
+  padding-bottom: 4px;
+  width: 100%;
+
+  border: 0;
+  border-bottom: 1px solid $mainBlue;
+
   outline: none;
+
+  &:hover {
+    border-color: $lightBlue;
+  }
 }
