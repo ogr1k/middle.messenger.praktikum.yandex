@@ -1,0 +1,6 @@
+<div class="interimNavigationButtons">
+    <h1 class="title">Временная навигация, чтобы посмотреть страницы</h1>
+    {{#each partialNamesButtons as |partialName|}}
+        {{> (partialName) ..}}
+    {{/each}}
+</div>

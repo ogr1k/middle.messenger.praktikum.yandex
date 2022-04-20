@@ -12,8 +12,8 @@ const data = {
         {label: "Пароль", type: 'password', name: 'password'}
     ],
     buttons: [
-        {type: 'submit', text: 'Войти', form: 'loginForm'},
-        {type: 'button', text: 'Нет аккаунта?', form: 'loginForm'}
+        {type: 'submit', text: 'Войти', form: 'loginForm', id: 'loginFormButton'},
+        {type: 'button', text: 'Нет аккаунта?', form: 'loginForm', id: 'registrationLoginFormButton'}
     ]
 }
 

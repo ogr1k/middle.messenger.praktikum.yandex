@@ -17,8 +17,8 @@ const data = {
         {label: "Пароль (еще раз)", type: 'password', name: 'passwordRepeat'}
     ],
     buttons: [
-        {type: 'submit', text: 'Зарегистрироваться', form: 'registrationForm'},
-        {type: 'button', text: 'Войти', form: 'registrationForm'}
+        {type: 'submit', text: 'Зарегистрироваться', form: 'registrationForm', id: 'registrationFormButton'},
+        {type: 'button', text: 'Войти', form: 'registrationForm', id: 'loginRegistrationFormButton'}
     ]
 }
 
