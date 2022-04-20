@@ -5,6 +5,7 @@ import { registration } from "./src/pages/authorization/registration/registratio
 import {interimNavigationButtons} from "./src/components/interimNavigationButtons/interimNavigationButtons"
 import tmpl from './index.hbs'
 import './index.scss'
+import {chats} from "./src/pages/chats/chats";
 
 Handlebars.registerPartial('buttons' , interimNavigationButtons())
 Handlebars.registerPartial('page' , login())
@@ -20,6 +21,9 @@ const addEventListenersToInterimNav = (root) => {
                 case 'registrationNav': {
                     Handlebars.registerPartial('page' , registration())
                 } break;
+                case 'chatNav': {
+                    Handlebars.registerPartial('page' , chats())
+                }
             }
             root.innerHTML = tmpl()
             addEventListenersToInterimNav(root)
