@@ -9,6 +9,7 @@ const data = {
         {type: 'button', text: 'Вход', id: 'loginNav'},
         {type: 'button', text: 'Регистрация', id: 'registrationNav'},
         {type: 'button', text: 'Заглушка чата', id: 'chatNav'},
+        {type: 'button', text: 'Профиль', id: 'profileNav'},
     ]
 }
 

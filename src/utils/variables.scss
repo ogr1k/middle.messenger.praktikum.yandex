@@ -1,7 +1,16 @@
 $mainGrey: #7f7f7f;
 $lightGrey: #8f8f8f;
+$lightestGrey: #FBFBFB;
 $mainBlue: #3369F3;
 $lightBlue: #739ce0;
+
+$greyDisabledInputBorder: #EAEAEA;
+
+@mixin center-by-flex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @mixin set-font-size-height($size, $line-height) {
   font-size: $size;
@@ -19,6 +28,14 @@ $lightBlue: #739ce0;
 @mixin medium-text($size, $line-height, $color) {
   font-family: 'Inter', serif;
   font-weight: 500;
+  font-size: $size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin semi-bold-text($size, $line-height, $color) {
+  font-family: 'Inter', serif;
+  font-weight: 600;
   font-size: $size;
   line-height: $line-height;
   color: $color;

@@ -1,5 +1,9 @@
 @import './src/utils/variables.scss';
 
+body {
+  margin: 0;
+}
+
 #root {
   @include medium-text(13px, 13px, black)
 }

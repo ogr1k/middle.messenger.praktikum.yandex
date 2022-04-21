@@ -28,4 +28,9 @@
   &:hover {
     border-color: $lightBlue;
   }
+
+  &:disabled {
+    background-color: white;
+    border-color: $greyDisabledInputBorder;
+  }
 }

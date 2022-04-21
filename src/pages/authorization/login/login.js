@@ -1,8 +1,8 @@
 import Handlebars from 'handlebars'
 
 import tmpl from './login.hbs'
-import {authorizationForm} from "../../../components/authorizationForm/authorizationForm";
-import './login.scss';
+import {authorizationForm} from "../../../components/authorizationForm/authorizationForm"
+import './login.scss'
 
 const data = {
     formName: 'loginForm',
