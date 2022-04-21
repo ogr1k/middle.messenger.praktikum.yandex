@@ -1,12 +1,12 @@
 import Handlebars from "handlebars";
 
-import { login } from "./src/pages/authorization/login/login"
-import { registration } from "./src/pages/authorization/registration/registration"
+import {login} from "./src/pages/authorization/login/login"
+import {registration} from "./src/pages/authorization/registration/registration"
 import {interimNavigationButtons} from "./src/components/interimNavigationButtons/interimNavigationButtons"
+import {chats} from "./src/pages/chats/chats";
+import {profile, ProfilePageTypes} from "./src/pages/profile/profile";
 import tmpl from './index.hbs'
 import './index.scss'
-import {chats} from "./src/pages/chats/chats";
-import {profile} from "./src/pages/profile/profile";
 
 Handlebars.registerPartial('buttons' , interimNavigationButtons())
 Handlebars.registerPartial('page' , login())
@@ -26,7 +26,13 @@ const addEventListenersToInterimNav = (root) => {
                     Handlebars.registerPartial('page' , chats())
                 } break;
                 case 'profileNav': {
-                    Handlebars.registerPartial('page' , profile())
+                    Handlebars.registerPartial('page' , profile(ProfilePageTypes.PROFILE))
+                } break;
+                case 'profileEditNav': {
+                    Handlebars.registerPartial('page' , profile(ProfilePageTypes.PROFILE_EDIT))
+                } break;
+                case 'profileEditPassNav': {
+                    Handlebars.registerPartial('page' , profile(ProfilePageTypes.PROFILE_CHANGE_PASSWORD))
                 } break;
             }
             root.innerHTML = tmpl()

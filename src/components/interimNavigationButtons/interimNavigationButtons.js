@@ -10,6 +10,8 @@ const data = {
         {type: 'button', text: 'Регистрация', id: 'registrationNav'},
         {type: 'button', text: 'Заглушка чата', id: 'chatNav'},
         {type: 'button', text: 'Профиль', id: 'profileNav'},
+        {type: 'button', text: 'Профиль изменение', id: 'profileEditNav'},
+        {type: 'button', text: 'Профиль изменение пароля', id: 'profileEditPassNav'},
     ]
 }
 
