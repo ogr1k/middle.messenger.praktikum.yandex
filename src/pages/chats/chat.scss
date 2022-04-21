@@ -1,9 +1,11 @@
 @import '../../utils/variables.scss';
 
 .chats {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include set-font-size-height(30px, 30px)
 }
