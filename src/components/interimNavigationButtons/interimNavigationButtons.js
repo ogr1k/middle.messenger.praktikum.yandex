@@ -12,6 +12,8 @@ const data = {
         {type: 'button', text: 'Профиль', id: 'profileNav'},
         {type: 'button', text: 'Профиль изменение', id: 'profileEditNav'},
         {type: 'button', text: 'Профиль изменение пароля', id: 'profileEditPassNav'},
+        {type: 'button', text: 500, id: 'internalErrorNav'},
+        {type: 'button', text: 404, id: 'wrongPathNav'},
     ]
 }
 

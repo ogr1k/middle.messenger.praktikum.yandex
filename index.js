@@ -7,6 +7,8 @@ import {chats} from "./src/pages/chats/chats";
 import {profile, ProfilePageTypes} from "./src/pages/profile/profile";
 import tmpl from './index.hbs'
 import './index.scss'
+import {internalError} from "./src/pages/errors/internalError";
+import {wrongPathError} from "./src/pages/errors/wrongPathError";
 
 Handlebars.registerPartial('buttons' , interimNavigationButtons())
 Handlebars.registerPartial('page' , login())
@@ -33,6 +35,12 @@ const addEventListenersToInterimNav = (root) => {
                 } break;
                 case 'profileEditPassNav': {
                     Handlebars.registerPartial('page' , profile(ProfilePageTypes.PROFILE_CHANGE_PASSWORD))
+                } break;
+                case 'internalErrorNav': {
+                    Handlebars.registerPartial('page' , internalError())
+                } break;
+                case 'wrongPathNav': {
+                    Handlebars.registerPartial('page' , wrongPathError())
                 } break;
             }
             root.innerHTML = tmpl()
