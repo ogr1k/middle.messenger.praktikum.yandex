@@ -45,7 +45,10 @@ export const addEventListenersToInterimNav = (root) => {
 
 export const registerPagePartialDependsOnCurrentPath = () => {
             switch (window.location.pathname) {
-                case Paths.LOGIN: {
+                case ('/'): {
+                    registerPagePartial(login)
+                } break;
+                case (Paths.LOGIN): {
                     registerPagePartial(login)
                 } break;
                 case Paths.REGISTRATION: {
