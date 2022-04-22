@@ -15,7 +15,7 @@
     padding: 0;
     margin: 0;
 
-    li {
+    .listElement {
       display: inline-block;
     }
 
@@ -23,7 +23,7 @@
       background-color: $mainBlue;
       color: white;
 
-      padding: 5px;
+      padding: 5px 10px;
       border-radius: 8px;
     }
   }

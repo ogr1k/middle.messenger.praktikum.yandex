@@ -1,14 +1,10 @@
 import Handlebars from "handlebars";
 
-import {login} from "./src/pages/authorization/login/login"
-import {registration} from "./src/pages/authorization/registration/registration"
+import {login, registration, chats, profile, internalError, wrongPathError} from './src/pages'
 import {interimNavigationButtons} from "./src/components/interimNavigationButtons/interimNavigationButtons"
-import {chats} from "./src/pages/chats/chats";
-import {profile, ProfilePageTypes} from "./src/pages/profile/profile";
+import {ProfilePageTypes} from "./src/pages/profile/profile";
 import tmpl from './index.hbs'
 import './index.scss'
-import {internalError} from "./src/pages/errors/internalError";
-import {wrongPathError} from "./src/pages/errors/wrongPathError";
 
 Handlebars.registerPartial('header' , interimNavigationButtons())
 Handlebars.registerPartial('page' , login())
