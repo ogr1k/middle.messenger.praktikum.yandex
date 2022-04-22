@@ -10,7 +10,7 @@ import './index.scss'
 import {internalError} from "./src/pages/errors/internalError";
 import {wrongPathError} from "./src/pages/errors/wrongPathError";
 
-Handlebars.registerPartial('buttons' , interimNavigationButtons())
+Handlebars.registerPartial('header' , interimNavigationButtons())
 Handlebars.registerPartial('page' , login())
 
 const addEventListenersToInterimNav = (root) => {
