@@ -1,0 +1,11 @@
+@import '../../utils/variables.scss';
+
+.chats {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include set-font-size-height(30px, 30px)
+}

@@ -1,0 +1,10 @@
+<nav class="interimNavigationButtons">
+    <h1 class="title">Временная навигация, чтобы посмотреть страницы</h1>
+    <ul class="list">
+        {{#each partialNamesButtons as |partialName|}}
+            <li class="listElement">
+                {{> (partialName) ..}}
+            </li>
+        {{/each}}
+    </ul>
+</nav>
